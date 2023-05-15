@@ -1,7 +1,6 @@
-import PassFinder
+import Pass
 print ("url: ")
 x = input()
 url = x
-object = PassFinder.PassFinder(url)
-
+object = Pass.PassFinder(url)
 object.findPass()
