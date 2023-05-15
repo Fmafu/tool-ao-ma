@@ -1,4 +1,5 @@
 import requests
+length =input()
 class PassFinder:
     array = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
          'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
@@ -75,7 +76,7 @@ class PassFinder:
 
     def findPass(self):
         for char in self.array:
-            for number in range(21):
+            for number in range(length):
                 if (number == 0):
                     continue
                 self.handleRequest(number, char)
@@ -98,6 +99,8 @@ class PassFinder:
             asd = self.bubbleSortByPosition(self.password)
             print(asd)
 
+        
+        
         
 
     
